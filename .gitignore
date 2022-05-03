@@ -11,5 +11,5 @@
 !.gitignore-global
 !.gemrc
 !powershell
-!powershell/*
+!powershell/**
 
