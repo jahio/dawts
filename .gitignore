@@ -5,6 +5,7 @@
 #
 *
 !.gitignore
+!readme.md
 !eso-addons.toml
 !asdfrc
 !.gitignore-global
