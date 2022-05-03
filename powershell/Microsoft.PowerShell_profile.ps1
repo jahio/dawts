@@ -1,0 +1,1 @@
+$env:POWERSHELL_TELEMETRY_OPTOUT = $true
