@@ -1,0 +1,9 @@
+*.codekit3
+.DS_Store
+.vscode
+.nova
+.idea
+.tool-versions
+.envrc
+.gradle
+

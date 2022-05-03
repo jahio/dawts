@@ -1,0 +1,13 @@
+#
+# ~/.config
+#
+# Start by ignoring everything, then whitelist the stuff you wanna keep:
+#
+*
+!.gitignore
+!eso-addons.toml
+!asdfrc
+!.gitignore-global
+!.gemrc
+!powershell
+
