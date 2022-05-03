@@ -14,5 +14,14 @@ function gitc  { git commit @Args } ; Set-Alias -Name gc -Value gitc -Option All
 # What ports are listening? May be incomplete, recommend external nmap scan
 # function ports { lsof -i -n -P | grep LISTEN }
 
-# Get-Command
-function gcomm { Get-Command @Args } ; Set-Alias -Name gcom -Value gcomm -Option AllScope -Force
+# Redefine 'which' as 'Get-Command'
+function which { Get-Command @Args }
+function rwhich { /usr/bin/which @Args }
+
+# Redefine less as moar
+function less { moar @Args }
+function rless { /usr/bin/less @Args }
+
+# df -> duf
+function df { duf -only local -hide-mp "/boot/*,/boot,/home" -output "mountpoint,size,used,avail,usage,type" }
+function rdf { /usr/bin/df @Args }
