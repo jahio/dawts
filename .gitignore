@@ -12,4 +12,5 @@
 !.gemrc
 !powershell
 !powershell/**
+!appimagelauncher.cfg
 
