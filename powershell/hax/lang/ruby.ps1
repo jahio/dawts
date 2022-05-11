@@ -36,6 +36,8 @@ function Invoke-rbenv {
   rbenv exec @Args
 }
 
+<# -- DISABLED as of 2022-05-10 pending move to asdf
+
 function irb {
   Invoke-rbenv irb @Args
 }
@@ -55,3 +57,5 @@ function bundle {
 function be {
   Invoke-rbenv bundle exec @Args
 }
+
+#>

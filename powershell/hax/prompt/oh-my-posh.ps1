@@ -1,5 +1,4 @@
 # Use oh-my-posh (https://ohmyposh.dev/) for shell prompt
-# Symlink $(brew --prefix oh-my-posh)/share/oh-my-posh/themes/YOUR_THEME_OF_CHOICE.json to ~/.config/omp.theme.json
 $desired_posh_theme = "plague"
 
 # TODO: Make sure desired theme file exists

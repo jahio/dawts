@@ -1,5 +1,8 @@
 #!/usr/bin/env pwsh
 
+
+<# -- DISABLED as of 2022-05-10: This is hacky and bad and doesn't work anyway, kill it
+
 $DebugPreference = 'SilentlyContinue'
 $ErrorView = 'NormalView'
 
@@ -23,3 +26,5 @@ function hax {
 # toggle hax on and off (also print the status of the stuff)
 
 # Export-ModuleMember -Function * -Alias * -Variable *
+
+#>
