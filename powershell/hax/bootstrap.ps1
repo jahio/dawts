@@ -13,7 +13,7 @@ $env:HOMEBREW_NO_ANALYTICS = 1
 
 # Set Up Homebrew
 ## Default to "$HOME/.brew", then override if on Linux
-$brew_location = "$HOME/.brew"
+$brew_location = "$HOME/opt/brew"
 
 if ($IsLinux) {
   $brew_location = "/home/linuxbrew/.linuxbrew"
