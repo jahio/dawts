@@ -1,14 +1,9 @@
-# addonDir - location of the ESO addon directory
 addonDir = "/home/jah/Documents/Elder Scrolls Online/live/AddOns"
 
-# addons - List of addons to be installed
-#   name - Name of the addon
-#   url - Download URL of the addon, it is the link under the Download button on ESOUI.
-#   dependency - (default: false) Determines, if the addon is a dependency.
-#                Set this to true, if you don't use the addon standalone, but only as a dependency for another addon.
 [[addons]]
 name = "SkyShards"
 url = "https://www.esoui.com/downloads/download128-SkyShards.html"
+dependency = false
 
 [[addons]]
 name = "CustomCompassPins"
@@ -48,6 +43,7 @@ dependency = true
 [[addons]]
 name = "TamrielTradeCentre"
 url = "https://www.esoui.com/downloads/download1245-TamrielTradeCentre.html"
+dependency = false
 
 [[addons]]
 name = "LibCustomMenu"
@@ -57,10 +53,7 @@ dependency = true
 [[addons]]
 name = "PriceTooltip"
 url = "https://www.esoui.com/downloads/landing.php?s=7c86aae6e6879a204910b66d8a22d3a0&fileid=2221"
-
-#[[addons]]
-#name = "KelaPadUI"
-#url = "https://www.esoui.com/downloads/landing.php?s=c282436de28fe08473cbc6177fb4e9c2&fileid=2740"
+dependency = false
 
 [[addons]]
 name = "LibSets"
@@ -75,6 +68,7 @@ dependency = true
 [[addons]]
 name = "UndauntedPledgesUtilities"
 url = "https://www.esoui.com/downloads/landing.php?s=c282436de28fe08473cbc6177fb4e9c2&fileid=2267"
+dependency = false
 
 [[addons]]
 name = "LibSlashCommander"
@@ -82,12 +76,9 @@ url = "https://www.esoui.com/downloads/landing.php?s=c282436de28fe08473cbc6177fb
 dependency = true
 
 [[addons]]
-name = "CShortcutPieMenu"
-url = "https://www.esoui.com/downloads/landing.php?s=7895645e2abdfab0e372f62788f88112&fileid=3088"
-
-[[addons]]
 name = "DolgubonsLazyWritCreator"
 url = "https://www.esoui.com/downloads/landing.php?s=7895645e2abdfab0e372f62788f88112&fileid=1346"
+dependency = false
 
 [[addons]]
 name = "LibLazyCrafting"
@@ -97,6 +88,7 @@ dependency = true
 [[addons]]
 name = "VotansKeybinder"
 url = "https://www.esoui.com/downloads/landing.php?s=75cf924e820075aab9ef44d3d28b391b&fileid=1174"
+dependency = false
 
 [[addons]]
 name = "libAddonKeybinds"
@@ -116,18 +108,17 @@ dependency = true
 [[addons]]
 name = "TEB"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=3075"
+dependency = false
 
 [[addons]]
 name = "MapPins"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=1881"
-
-#[[addons]]
-#name = "ArkadiusTradeTools"
-#url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=1752"
+dependency = false
 
 [[addons]]
 name = "VotansMiniMap"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=1399"
+dependency = false
 
 [[addons]]
 name = "LibAsync"
@@ -142,6 +133,7 @@ dependency = true
 [[addons]]
 name = "BeamMeUp"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=2143"
+dependency = false
 
 [[addons]]
 name = "LibDialog"
@@ -164,12 +156,9 @@ url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec590
 dependency = true
 
 [[addons]]
-name = "AltAttributes"
-url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=3056"
-
-[[addons]]
 name = "IsJustaDIWM"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=3136"
+dependency = false
 
 [[addons]]
 name = "libAddonKeybinds"
@@ -179,6 +168,7 @@ dependency = true
 [[addons]]
 name = "VotansKeybinder"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=1174"
+dependency = false
 
 [[addons]]
 name = "LibChatMessage"
@@ -203,10 +193,12 @@ dependency = true
 [[addons]]
 name = "LoreBooks"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=288"
+dependency = false
 
 [[addons]]
 name = "FishermansFriend"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=2904"
+dependency = false
 
 [[addons]]
 name = "LibPrice"
@@ -221,6 +213,7 @@ dependency = true
 [[addons]]
 name = "WritWorthy"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=1605"
+dependency = false
 
 [[addons]]
 name = "LibMediaProvider-1.0"
@@ -230,10 +223,12 @@ dependency = true
 [[addons]]
 name = "MailBuddy"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=866"
+dependency = false
 
 [[addons]]
 name = "GamePadHelper"
 url = "https://esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=3268"
+dependency = false
 
 [[addons]]
 name = "LibCovetousCountess"
@@ -255,3 +250,7 @@ name = "LibItemLinkDecoder"
 url = "https://www.esoui.com/downloads/landing.php?s=82766347ca89038570b49eec59091d46&fileid=3265"
 dependency = true
 
+[[addons]]
+name = "LibMapData"
+url = "https://www.esoui.com/downloads/download3353-LibMapData"
+dependency = true
