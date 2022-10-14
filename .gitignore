@@ -1,19 +1,20 @@
 #
-# ~/.config
+# Previously this .gitignore was set to ignore everything recursively,
+# then whitelist the stuff I wanted to _keep_ instead. I've since reverted
+# that behavior and will now just delete what I don't want, or use .gitignore
+# normally. I was previously using it this way to experiment with making this
+# repo basically a backup of ~/.config, which is normally littered with junk
+# dotfiles that you wouldn't want to back up most of anyway on Linux, but
+# that turned out to be a PITA, so meh, screw it, back to the old way of
+# keeping this in ~/Projects/dawts, then symlinking what I want into
+# ~/.config/ from ~/Projects/dawts on system restore instead.
 #
-# Start by ignoring everything, then whitelist the stuff you wanna keep:
+# Previous syntax example, for posterity:
 #
-*
-*/**
-!.gitignore
-!readme.md
-!eso-addons.toml
-!asdfrc
-!.gitignore-global
-!.gemrc
-!powershell
-!powershell/**
-!appimagelauncher.cfg
-!systemd
-!systemd/**
-!cheat-conf.yml
+# *
+# */**
+# !.gitignore
+# !.gitignore-global
+# !.gemrc
+# !readme.md
+#
