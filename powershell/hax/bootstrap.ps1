@@ -3,7 +3,7 @@
 #
 
 # Set environment for Homebrew
-$env:HOMEBREW_CASK_OPTS = "--appdir=$HOME/Apps"
+$env:HOMEBREW_CASK_OPTS = "--appdir=$HOME/Applications"
 $env:HOMEBREW_LOGS = "$HOME/.logs/brew.sh"
 $env:HOMEBREW_BOOTSNAP = 1
 $env:HOMEBREW_COLOR = 1
@@ -29,7 +29,7 @@ if ($IsLinux) {
 # TODO: Get current path, turn it into an array, prepend the below, then filter out duplicates
 # Set Paths that aren't already covered by Homebrew
 $updatedPath = (
-  "$HOME/.bin",          # Personal scripts/symlinks to misc. stuff
+  "$HOME/opt/bin",       # Personal scripts/symlinks to misc. stuff
   "$HOME/.local/bin",    # Stuff installed by pip/pipx
   "$HOME/.cargo/bin",    # From cargo, package installer for rust-lang
   "$HOME/.go/bin",       # Golang binaries

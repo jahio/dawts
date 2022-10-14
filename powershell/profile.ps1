@@ -22,7 +22,7 @@ $env:POWERSHELL_TELEMETRY_OPTOUT = $true
 # Set Paths that aren't already covered by Homebrew
 $updatedPath = (
   "$HOME/opt/brew/bin",
-  "$HOME/.bin",          # Personal scripts/symlinks to misc. stuff
+  "$HOME/opt/bin",       # Personal scripts/symlinks to misc. stuff
   "$HOME/.local/bin",    # Stuff installed by pip/pipx
   "$HOME/.cargo/bin",    # From cargo, package installer for rust-lang
   "$HOME/.go/bin",       # Golang binaries

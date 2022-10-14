@@ -13,7 +13,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>Command</key>
-	<string></string>
+	<string>/Users/jah/opt/pwsh/current/pwsh</string>
 	<key>CopySelection</key>
 	<false/>
 	<key>Custom Color Presets</key>
