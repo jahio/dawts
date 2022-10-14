@@ -1,0 +1,5 @@
+[user]
+	name = J. Austin Hughey
+	email = git@jah.io
+[core]
+	excludesfile = /Users/jah/.gitignore-global
