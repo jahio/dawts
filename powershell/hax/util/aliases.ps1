@@ -2,7 +2,7 @@
 # Beats having to type a long list of options over and over again!
 
 # exa: ls replacement (brew install exa)
-function ls { exa -lamgh --icons --git --group-directories-first --color-scale --time-style="long-iso" @Args }
+function ls { exa -lamgh --icons --git --group-directories-first --color-scale --time-style="long-iso" -I ".DS_Store" @Args }
 function real-ls { /bin/ls @Args }
 
 # Aliases for git

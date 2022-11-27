@@ -36,7 +36,6 @@ function Invoke-rbenv {
   rbenv exec @Args
 }
 
-
 function irb {
   Invoke-rbenv irb @Args
 }
