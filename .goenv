@@ -1,0 +1,52 @@
+#
+# Symlink to ~/.config/.goenv
+#   - Overrides go up top under this line, reference variables below that
+#   - Note: Don't wrap paths in quotes or Go will double-up on them leading to problems
+#           Right: GOBIN=/Users/jah/opt/bin
+#           Wrong: GOBIN="/Users/jah/opt/bin"
+#
+
+GOBIN=/Users/jah/opt/bin
+
+#
+# Existing output of `go env` as of 1.19.5 on 2023-01-11
+#
+# GO111MODULE=""
+# GOARCH="amd64"
+# GOBIN=""
+# GOCACHE="/Users/jah/Library/Caches/go-build"
+# GOENV="/Users/jah/.config/.goenv"
+# GOEXE=""
+# GOEXPERIMENT=""
+# GOFLAGS=""
+# GOHOSTARCH="amd64"
+# GOHOSTOS="darwin"
+# GOINSECURE=""
+# GOMODCACHE="/Users/jah/go/pkg/mod"
+# GONOPROXY=""
+# GONOSUMDB=""
+# GOOS="darwin"
+# GOPATH="/Users/jah/go"
+# GOPRIVATE=""
+# GOPROXY="https://proxy.golang.org,direct"
+# GOROOT="/Users/jah/opt/brew/Cellar/go/1.19.5/libexec"
+# GOSUMDB="sum.golang.org"
+# GOTMPDIR=""
+# GOTOOLDIR="/Users/jah/opt/brew/Cellar/go/1.19.5/libexec/pkg/tool/darwin_amd64"
+# GOVCS=""
+# GOVERSION="go1.19.5"
+# GCCGO="gccgo"
+# GOAMD64="v1"
+# AR="ar"
+# CC="clang"
+# CXX="clang++"
+# CGO_ENABLED="1"
+# GOMOD="/dev/null"
+# GOWORK=""
+# CGO_CFLAGS="-g -O2"
+# CGO_CPPFLAGS=""
+# CGO_CXXFLAGS="-g -O2"
+# CGO_FFLAGS="-g -O2"
+# CGO_LDFLAGS="-g -O2"
+# PKG_CONFIG="pkg-config"
+# GOGCCFLAGS="-fPIC -arch x86_64 -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/60/k6wbt6k932b7nwhj7rz6m0t00000gn/T/go-build2345977505=/tmp/go-build -gno-record-gcc-switches -fno-common"
