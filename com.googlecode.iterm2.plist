@@ -78938,7 +78938,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>10.337730764835438</real>
+			<real>5.3377307648354382</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -79266,7 +79266,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-2</integer>
+			<integer>0</integer>
 			<key>Scrollback Lines</key>
 			<integer>0</integer>
 			<key>Selected Text Color</key>
@@ -79312,7 +79312,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Transparency</key>
-			<real>0.15052788917054521</real>
+			<real>0.10422635991522607</real>
 			<key>Unicode Version</key>
 			<integer>8</integer>
 			<key>Unlimited Scrollback</key>

@@ -42,9 +42,20 @@ function Update-PowerShell {
   }
 
   #
+  # Are we on x86_64 or arm64?
+  #
+  $is_silicon = ('sysctl -ni hw.optional.arm64' | Invoke-Expression) # 1 is arm64, anything else is x86_64
+  if($is_silicon -eq 1) {
+    $Arch = "arm64"
+  } else {
+    $Arch = "x64"
+  }
+
+
+  #
   # Construct the URL to scan for based on platform, also the hashes url
   #
-  $DownloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v$LatestVersion/powershell-$LatestVersion-osx-x64.tar.gz"
+  $DownloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v$LatestVersion/powershell-$LatestVersion-osx-$Arch.tar.gz"
   $HashesURL = "https://github.com/PowerShell/PowerShell/releases/download/v$LatestVersion/hashes.sha256"
 
   #
