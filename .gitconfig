@@ -1,6 +1,6 @@
 [user]
 	name = J. Austin Hughey
-	email = github@jah.io
+	email = git@jah.io
 [core]
 	excludesfile = /Users/jah/.gitignore-global
 [filter "lfs"]
