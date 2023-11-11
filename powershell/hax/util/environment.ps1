@@ -8,5 +8,5 @@
 # EXECUTION ORDER IS NOT GUARANTEED.
 #
 
-# Exa (brew install exa) padding for icon display
-$env:EXA_ICON_SPACING = 2
+# Eza (brew install eza) padding for icon display
+$env:EZA_ICON_SPACING = 2
