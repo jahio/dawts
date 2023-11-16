@@ -3,7 +3,7 @@
 # python.ps1
 # PowerShell functions for working with Python through pyenv
 # HIGHLY EXPERIMENTAL. As I first write this, I'm very new to Python, and to pyenv.
-# Not all features of pyenv are going to work (particuarly autocompletion), but
+# Not all features of pyenv are going to work (particularly autocompletion), but
 # having made rbenv work similarly, and since pyenv takes its cues from rbenv
 # anyway, and given its environment-variable + shims based approach, this seems
 # like a manageable thing to at least take a stab at.
@@ -44,9 +44,9 @@ function python3 {
   Invoke-pyenv python3 @Args
 }
 
-# function bundle {
-#   Invoke-rbenv bundle @Args
-# }
+function hatch {
+  Invoke-pyenv hatch @Args
+}
 
 # function be {
 #   Invoke-rbenv bundle exec @Args
