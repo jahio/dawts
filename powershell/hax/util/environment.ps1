@@ -10,3 +10,8 @@
 
 # Eza (brew install eza) padding for icon display
 $env:EZA_ICON_SPACING = 2
+
+# For dotnet core
+$env:DOTNET_CLI_TELEMETRY_OPTOUT = 1
+# export DOTNET_ROOT="/Users/jah/opt/brew/opt/dotnet/libexec"
+$env:DOTNET_ROOT = "$(brew --prefix dotnet)/libexec"

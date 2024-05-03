@@ -24,22 +24,3 @@ if ($IsLinux) {
 # so we have to take the path as a string, pass that to the first invoke to get it to run
 # the command itself, then pass the *OUTPUT* from that command to the second Invoke.
 # Convoluted, but it works.
-
-# Declare the rest of $PATH properly
-# TODO: Get current path, turn it into an array, prepend the below, then filter out duplicates
-# Set Paths that aren't already covered by Homebrew
-$updatedPath = (
-  "$HOME/opt/bin",       # Personal scripts/symlinks to misc. stuff
-  "$HOME/.local/bin",    # Stuff installed by pip/pipx
-  "$HOME/.cargo/bin",    # From cargo, package installer for rust-lang
-  "$HOME/.go/bin",       # Golang binaries
-  "/usr/local/bin",      # Common system-level paths for regular and
-  "/usr/local/sbin",     # superuser programs (*/sbin)
-  "/usr/bin",
-  "/usr/sbin",
-  "/bin",
-  "/sbin",
-  "/usr/libexec"
-) | Select -Uniq
-
-$env:PATH = ($updatedPath -Join ":") + $env:PATH

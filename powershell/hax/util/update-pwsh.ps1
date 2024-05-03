@@ -56,7 +56,7 @@ function Update-PowerShell {
   # Construct the URL to scan for based on platform, also the hashes url
   #
   $DownloadURL = "https://github.com/PowerShell/PowerShell/releases/download/v$LatestVersion/powershell-$LatestVersion-osx-$Arch.tar.gz"
-  $HashesURL = "https://github.com/PowerShell/PowerShell/releases/download/v$LatestVersion/hashes.sha256"
+  # $HashesURL = "https://github.com/PowerShell/PowerShell/releases/download/v$LatestVersion/hashes.sha256"
 
   #
   # Find that URL within the assets array

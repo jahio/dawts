@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Command</key>
-	<string></string>
+	<string>/Users/jah/opt/pwsh/current/pwsh</string>
 	<key>CopySelection</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -79247,6 +79247,8 @@
 			</dict>
 			<key>Mouse Reporting</key>
 			<true/>
+			<key>Mouse Reporting allow clicks and drags</key>
+			<false/>
 			<key>Movement Keys Scroll Outside Interactive Apps</key>
 			<false/>
 			<key>Name</key>
