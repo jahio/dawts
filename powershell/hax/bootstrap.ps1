@@ -9,10 +9,7 @@ $env:HOMEBREW_BOOTSNAP = 1
 $env:HOMEBREW_COLOR = 1
 $env:HOMEBREW_NO_ANALYTICS = 1
 
-# TODO: Check for existence of $HOME/Apps and $HOME/.logs and create if they don't exist
-
-# Set Up Homebrew
-## Default to "$HOME/.brew", then override if on Linux
+# Set Up Homebrew: Defaults to $HOME/opt/brew, but uses /home/linuxbrew/.linuxbrew on Linux
 $brew_location = "$HOME/opt/brew"
 
 if ($IsLinux) {

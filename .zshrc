@@ -2,9 +2,9 @@ eval "$($HOME/opt/brew/bin/brew shellenv)"
 export PATH="$HOME/opt/bin:$PATH"
 
 # For pyenv:
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
 
 # for rbenv
 eval "$(rbenv init - zsh)"

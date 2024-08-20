@@ -19,19 +19,19 @@ $env:POWERSHELL_TELEMETRY_OPTOUT = $true
 # Set current path as an array
 $currentPath = $env:PATH -Split ":" | Select-Object -Uniq
 
-# Declare the rest of $PATH properly
-# TODO: Get current path, turn it into an array, prepend the below, then filter out duplicates
-# Set Paths that aren't already covered by Homebrew
+# Declare what we want in our $PATH here; we'll filter out duplicates below
+# Keep order of precedence in mind here; first binary found wins.
 $updatedPath = (
   "$HOME/opt/brew/bin",
-  "$HOME/opt/bin",                     # Personal scripts/symlinks to misc. stuff
-  "$HOME/.local/bin",                  # Stuff installed by pip/pipx
-  "$HOME/.cargo/bin",                  # From cargo, package installer for rust-lang
-  "$HOME/.go/bin",                     # Golang binaries
-  "$HOME/.dotnet/tools",               # .NET Core tools
-  # "$HOME/opt/brew/opt/openjdk@11/bin", # OpenJDK 11
-  "/usr/local/bin",                    # Common system-level paths for regular and
-  "/usr/local/sbin",                   # superuser programs (*/sbin)
+  "$HOME/opt/bin",                                    # Personal scripts/symlinks to misc. stuff
+  "$HOME/.local/bin",                                 # Stuff installed by pip/pipx
+  "$HOME/.cargo/bin",                                 # From cargo, package installer for rust-lang
+  "$HOME/.go/bin",                                    # Golang binaries
+  "$HOME/.dotnet/tools",                              # .NET Core tools
+  "$HOME/opt/brew/opt/openjdk@11/bin",                # OpenJDK 11
+  "$HOME/Applications/Pragtical.app/Contents/MacOS/", # Pragtical text editor: https://pragtical.dev/
+  "/usr/local/bin",                                   # Common system-level paths for regular and
+  "/usr/local/sbin",                                  # superuser programs (*/sbin)
   "/usr/bin",
   "/usr/sbin",
   "/bin",
