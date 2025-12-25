@@ -63,7 +63,7 @@ Get-ChildItem $hax/* -Include *.ps1 -Recurse -FollowSymlink | ForEach-Object -Pr
 # Editor, Visual, Pager
 $env:EDITOR=(which nano).Definition
 $env:VISUAL=(which nano).Definition
-$env:PAGER=(which moar).Definition
+$env:PAGER=(which moor).Definition
 
 # Put something pretty on the screen
 neofetch --disable packages shell theme de wm icons --cpu_temp C --speed_shorthand on --bold on --underline on --memory_percent on --ascii_distro ($neofetch_ascii_options | Get-Random)
