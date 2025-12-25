@@ -1,0 +1,15 @@
+root = true
+[*]
+
+# Primary use case: POSIX-compliant operating systems
+end_of_line = lf
+insert_final_newline = true
+
+# It's 2025 for the love fxck...
+charset = utf-8
+
+# Defaults; override per-language as needed
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
