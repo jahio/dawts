@@ -11,4 +11,5 @@ ln -s $PWD/.gitignore-global $HOME
 ln -s $PWD/.gemrc $HOME
 ln -s $PWD/.zshrc $HOME
 mkdir ~/Library/KeyBindings && ln -s $PWD/DefaultKeyBinding.dict $HOME/Library/KeyBindings/
+ln -s $HOME/Projects/dawts/ghostty $HOME/.config/
 ```
