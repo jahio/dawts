@@ -29,14 +29,15 @@ $updatedPath = (
   "$HOME/.go/bin",                                    # Golang binaries
   "$HOME/.dotnet/tools",                              # .NET Core tools
   "$HOME/opt/brew/opt/openjdk@11/bin",                # OpenJDK 11
-  "$HOME/Applications/Pragtical.app/Contents/MacOS/", # Pragtical text editor: https://pragtical.dev/
   "/usr/local/bin",                                   # Common system-level paths for regular and
   "/usr/local/sbin",                                  # superuser programs (*/sbin)
   "/usr/bin",
   "/usr/sbin",
   "/bin",
   "/sbin",
-  "/usr/libexec"
+  "/usr/libexec",
+  "$HOME/opt/brew/opt/postgresql@18/bin",
+  "$HOME/opt/brew/opt/openjdk/bin"
 ) | Select-Object -Uniq
 
 $env:PATH = (($updatedPath + $currentPath) | Select-Object -Uniq) -Join ":"
