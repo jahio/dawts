@@ -1,13 +1,8 @@
 eval "$($HOME/opt/brew/bin/brew shellenv)"
 export PATH="$HOME/opt/bin:$PATH"
 
-# For pyenv:
-#export PYENV_ROOT="$HOME/.pyenv"
-#command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-
-# for rbenv
-eval "$(rbenv init - zsh)"
+# ASDF tool manager
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # aliases
 alias gst='git status'

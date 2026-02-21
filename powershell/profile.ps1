@@ -28,7 +28,6 @@ $updatedPath = (
   "$HOME/.cargo/bin",                                 # From cargo, package installer for rust-lang
   "$HOME/.go/bin",                                    # Golang binaries
   "$HOME/.dotnet/tools",                              # .NET Core tools
-  "$HOME/opt/brew/opt/openjdk@11/bin",                # OpenJDK 11
   "/usr/local/bin",                                   # Common system-level paths for regular and
   "/usr/local/sbin",                                  # superuser programs (*/sbin)
   "/usr/bin",
