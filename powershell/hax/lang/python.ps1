@@ -17,38 +17,29 @@
 #                    Typically I install Homebrew in $HOME/opt/brew
 #   PYENV_ROOT:      $HOME/.pyenv
 #
-$env:PYENV_ROOT = "$HOME/.pyenv"
-$pyenv_loc = "$(brew --prefix pyenv)/bin/pyenv"
+# $env:PYENV_ROOT = "$HOME/.pyenv"
+# $pyenv_loc = "$(brew --prefix pyenv)/bin/pyenv"
 
-function Invoke-pyenv {
-  pyenv exec @Args
-}
-
-# function irb {
-#   Invoke-rbenv irb @Args
+# function Invoke-pyenv {
+#   pyenv exec @Args
 # }
 
-function pip {
-  Invoke-pyenv pip @Args
-}
-
-function pip3 {
-  Invoke-pyenv pip3 @Args
-}
-
-function python {
-  Invoke-pyenv python @Args
-}
-
-function python3 {
-  Invoke-pyenv python3 @Args
-}
-
-function hatch {
-  Invoke-pyenv hatch @Args
-}
-
-# function be {
-#   Invoke-rbenv bundle exec @Args
+# function pip {
+#   Invoke-pyenv pip @Args
 # }
-
+#
+# function pip3 {
+#   Invoke-pyenv pip3 @Args
+# }
+#
+# function python {
+#   Invoke-pyenv python @Args
+# }
+#
+# function python3 {
+#   Invoke-pyenv python3 @Args
+# }
+#
+# function hatch {
+#   Invoke-pyenv hatch @Args
+# }

@@ -1,14 +1,13 @@
 #!/usr/bin/env pwsh
 
-# lang-ruby.psm1
 # PowerShell functions for working with Ruby, rbenv, and related things.
 
 # Set environment variables for working with Ruby (for things like ruby-install, etc.)
 # NOTE: Requires $env:PATH to be set *before* running these commands so they can pick up
 # `brew`, etc.
-$openssl11 = brew --prefix openssl@1.1
+#$openssl11 = brew --prefix openssl@1.1
 $env:DISABLE_SPRING = $true
-$env:RUBY_CONFIGURE_OPTS = "--with-openssl-dir=$openssl11"
+#$env:RUBY_CONFIGURE_OPTS = "--with-openssl-dir=$openssl11"
 
 <#
 .SYNOPSIS
@@ -36,23 +35,22 @@ function Invoke-rbenv {
   rbenv exec @Args
 }
 
-function irb {
-  Invoke-rbenv irb @Args
-}
-
-function gem {
-  Invoke-rbenv gem @Args
-}
-
-function ruby {
-  Invoke-rbenv ruby @Args
-}
-
-function bundle {
-  Invoke-rbenv bundle @Args
-}
-
-function be {
-  Invoke-rbenv bundle exec @Args
-}
-
+# function irb {
+#   Invoke-rbenv irb @Args
+# }
+#
+# function gem {
+#   Invoke-rbenv gem @Args
+# }
+#
+# function ruby {
+#   Invoke-rbenv ruby @Args
+# }
+#
+# function bundle {
+#   Invoke-rbenv bundle @Args
+# }
+#
+# function be {
+#   Invoke-rbenv bundle exec @Args
+# }
