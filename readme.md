@@ -9,7 +9,7 @@ $ mkdir $HOME/.config && ln -s $PWD/powershell $HOME/.config/
 $ ln -s $PWD/.gitconfig $HOME
 $ ln -s $PWD/.gitignore-global $HOME
 $ ln -s $PWD/.gemrc $HOME
-$ mkdir ~/Library/KeyBindings && ln -s $PWD/DefaultKeyBinding.dict $ $HOME/Library/KeyBindings/
+$ mkdir ~/Library/KeyBindings && ln -s $PWD/DefaultKeyBinding.dict $HOME/Library/KeyBindings/
 $ ln -s $HOME/Projects/dawts/ghostty $HOME/.config/
 $ ln -s "$HOME/Projects/dawts/.goenv" "$HOME/.config/"
 
