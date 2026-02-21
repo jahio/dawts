@@ -2144,7 +2144,7 @@ focus-follows-mouse = false
 #   * `allow`
 #   * `deny`
 #
-clipboard-read = ask
+clipboard-read = allow
 
 clipboard-write = allow
 # Trims trailing whitespace on data that is copied to the clipboard. This does
@@ -2193,7 +2193,7 @@ image-storage-limit = 320000000
 # paste is always enabled even if this is `false`.
 #
 # The default value is true on Linux and macOS.
-copy-on-select = true
+copy-on-select = false
 
 # The action to take when the user right-clicks on the terminal surface.
 #
@@ -2262,7 +2262,7 @@ config-default-files = true
 # any confirmation. This can also be set to `always`, which will always
 # confirm closing a surface, even if shell integration says a process isn't
 # running.
-confirm-close-surface = true
+confirm-close-surface = false
 
 # Whether or not to quit after the last surface is closed.
 #
