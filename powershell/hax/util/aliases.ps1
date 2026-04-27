@@ -1,11 +1,11 @@
 # These are just some hax for quick and easy re-use of various commands
 # Beats having to type a long list of options over and over again!
 
-# exa: ls replacement (brew install exa)
+# eza: ls replacement (brew install eza)
 function ls {
   # First, check if eza is installed and in $PATH. If so, run it. Otherwise, we'll fall back to normal /bin/ls
   if (Get-Command eza -ErrorAction SilentlyContinue) {
-    eza -lamgh --icons --git --group-directories-first --color-scale-mode gradient --time-style="long-iso" @Args
+    eza -lamgh --icons --git --group-directories-first --color-scale-mode gradient --time-style="long-iso" -I ".DS_Store" @Args
   }
   else {
     /bin/ls -Flac --color @Args
