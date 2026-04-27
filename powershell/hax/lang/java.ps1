@@ -1,5 +1,5 @@
 # Adds Java to the beginning of the PATH environment variable
-# since we install it from Brew, which is not in the default PATH.
+# since we install it from asdf, the plugin for which will only
+# set JAVA_HOME if in a supported shell - and pwsh isn't.
 
-# $env:JAVA_HOME = "$HOME/opt/brew/opt/openjdk@11"
-# $env:PATH = "$env:JAVA_HOME/bin:$env:PATH"
+$env:JAVA_HOME = Get-Item "$(asdf which java)" | Get-ItemPropertyValue -Name DirectoryName
